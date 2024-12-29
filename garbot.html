@@ -38,6 +38,22 @@
         img {
             animation: fadeIn 3s ease-in-out;
         }
+        .wrong-button {
+        background: none;
+        border: none;
+        color: white; /* Adjust the color as needed */
+        font-size: 50px; /* Size of the "X" */
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin-top: -500px;
+        margin-left: 1250px;
+        outline: none;
+        }
+
+        .wrong-button:hover {
+        color: #ff0000; /* Change color on hover */
+        }
     </style>
 </head>
 <body>
@@ -48,5 +64,11 @@
         <video autoplay loop muted width="640" height="360" style="margin-top: -300px; margin-left: 800px;">
             <source src="garbot.mp4" type="video/mp4">
         </video>
-    </section></body>
+    </section>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
+</body>
 </html>
