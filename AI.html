@@ -38,10 +38,32 @@
         img {
             animation: fadeIn 3s ease-in-out;
         }
+        .wrong-button {
+        background: none;
+        border: none;
+        color: white; /* Adjust the color as needed */
+        font-size: 50px; /* Size of the "X" */
+        font-weight: bold;
+        cursor: pointer;
+        padding: 0;
+        margin-top: -480px;
+        margin-left: 1250px;
+        outline: none;
+        }
+
+        .wrong-button:hover {
+        color: #ff0000; /* Change color on hover */
+        }
     </style>
 </head>
 <body>
     <h1 style="font-size: 75px; color: whitesmoke; margin-top: 30px; margin-left: 20px;">Skills - AI & Model Training</h1>
     <p style="font-size: 20px; color: whitesmoke; margin-top: 175px; margin-left: 350px; text-align: end; margin-right: 30px;">I have freelanced at Outlier AI and OneForma, specializing in training AI models in multiple languages and image processing. My role involved annotating and curating diverse datasets, developing workflows for efficient model training, and fine-tuning AI systems for improved accuracy and performance. I gained hands-on experience in enhancing machine learning workflows and optimizing AI models for various applications. This experience has sharpened my skills in data preparation, problem-solving, and working with complex AI systems. My contributions reflect a strong ability to support innovative AI development and deliver impactful solutions across diverse linguistic and visual processing domains.</p>
+    <button onclick="goBack()" class="wrong-button">&times;</button>
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
 </body>
 </html>
